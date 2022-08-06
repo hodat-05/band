@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Comman */
+.text-white{
+    color: #fff !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.row{
+    margin: 0 -8px;
+    /* padding: 0 8px; */
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    padding: 0 8px;
+    float: left;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.333%;
+    padding: 8px;
+}
+
+
+
+
+/* Main */
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color:black;
+    font-size: 15px;
+    font-weight: 530;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#nav{
+    display: inline-block;
+    
+}
+
+#nav > li:hover > a{
+    display: block;
+    color: #000;
+    background-color: #ccc;
+}
+.subnav li:hover a{
+    display: inline-block;
+    color: #000;
+    background-color:lightgray;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li > a{
+    color: #fff;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+}
+#nav > li{
+   display: inline-block;
+   position: relative;
+}
+#nav .subnav{
+   position: absolute;
+   background-color: #fff;
+   /* box-shadow: 0px 1px 1px 1px #ccc; */
+   box-shadow: 0 4px 10px 0 #757575;
+   display: none;
+}
+#nav .subnav li{
+    width: 100%;
+    min-width: 160px;
+}
+
+#nav .subnav li a{
+   color: #000;
+   width: 100%;
+   line-height: 40px;
+   padding-left: 16px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu:hover{
+    background-color: #ccc;
+    color: #000;
+    /* border: none; */
+}
+
+.mobile-menu,
+.search-header{
+    float: right;
+    line-height: 46px;
+    font-size: 15px;
+    padding: 0px 24px;
+    color: #fff;
+}
+
+#header .search-header:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#slider{
+    /* background: url(/Band/assets/img/slider/chicago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    background-position: top center;*/
+    margin-top: 46px;
+    position: relative;
+}
+
+#slider img{
+    width: 100%;
+}
+
+#slider .sub-slider{
+    position: absolute;
+    padding: 0 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 47px;
+}
+
+#slider .heading-slider{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-slider{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#content .content-section{
+    padding: 64px 16px 100px;
+    /* margin: 0 19%; */
+    /* max-width: 800px; */
+    font-size: 15px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+
+#content .heading-content{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+#content .slogan-section{
+    opacity: 0.6;
+    font-style: italic;
+    margin: 20px 0px;
+}
+
+#content .text-section{
+   text-align: justify;
+   line-height: 1.4;
+   display: flex;
+   margin: 15px 0;
+}
+
+#content .member-section{
+   padding: 32px 0;
+}
+
+/* #content .member-sub{
+    width: 33.3333%;
+    float: left;
+} */
+
+#content .member-name{
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+#content .member-img{
+    width: 60%;
+    border-radius: 6px;
+}
+
+#content .tour-section{
+    background-color: #000;
+    padding-bottom: 20px;
+}
+
+.tour-section .book-tickets{
+    background-color: #fff;
+}
+
+.tour-section .book-tickets li {
+    padding: 8px 18px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.tour-section .sold-out{
+    margin-left: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 4px 7px;
+}
+
+.tour-section .tickets-quantity{
+    float: right;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-top: -2px;
+}
+
+.tour-section .places-list{
+    margin-top:30px ;
+}
+
+.tour-section .places-body{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.tour-section .places-body p{
+    margin-bottom: 21px;
+}
+
+.tour-section .places-img{
+    width: 100%;
+    height: 184px;
+    display: block;
+}
+
+.tour-section .places-img:hover{
+    opacity: 0.7;
+}
+
+.tour-section .places-location{
+    font-weight: bold;
+}
+
+.tour-section .places-time{
+    opacity: 0.6;
+}
+
+.tour-section .places-text{
+    color: #000;
+    line-height: 1.4;
+}
+
+.tour-section .places-buy-tickets{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+}
+
+.tour-section .places-buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-content{
+    margin: 50px 0;
+}
+
+.row .contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="fa-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.form-control{
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-message .form-control{
+    margin-top: 8px;
+}
+
+.btn{
+    background-color: #000;
+    padding: 8px 16px;
+    color: #fff;
+    margin: 10px 0;
+    float: right;
+    border: none;
+}
+
+.btn:hover{
+    cursor:pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.content-map{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#footer{
+    padding: 64px 16px;
+    opacity: 0.6;
+}
+
+#footer .footer-body{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#footer .footer-body i[class*="fa-"]{
+    margin: 0 3px;
+}
+
+#footer .footer-body i[class*="fa-"]:hover{
+    opacity: 0.5;
+}
+
+#footer p{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#footer a{
+    color: #000;
+}
+
+.modal-tickets{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding-top: 20px;
+    z-index: 2;
+}
+
+.modal-tickets .modal-container{
+    background-color: #fff;
+    position: relative;
+    width: 850px;
+    min-height: 300px;
+    box-shadow: 0 3px 10px #757575;
+    animation: animationModal ease 0.5s;
+    max-width: calc(100% - 40px);
+}
+
+.modal-tickets .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.modal-tickets .modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-tickets .modal-header{
+    background-color: #009688;
+}
+
+.modal-tickets .modal-heading{
+    padding: 45px 16px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.modal-tickets .modal-bag{
+    margin-right: 18px;
+}
+
+.modal-tickets .modal-body{
+    padding: 18px;
+}
+
+.modal-tickets .modal-label{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.modal-tickets .modal-label i{
+    margin-right: 3px;
+}
+
+.modal-tickets .modal-input{
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    padding: 11px 6px;
+    width: 100%;
+}
+
+#modal-pay{
+    display: block;
+    background-color: #009688;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#modal-pay:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#modal-pay i{
+    margin-left: 5px;
+}
+
+.modal-tickets .modal-footer{
+    padding: 10px 10px 20px;
+    text-align: right;
+}
+
+.modal-tickets .modal-footer a{
+    margin-left: 5px;
+    color: #2196F3;
+}
+
+.modal-tickets .modal-help{
+
+}
+
+.modal-tickets.open{
+    display: flex;
+}
+
+@keyframes animationModal{
+    from {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
