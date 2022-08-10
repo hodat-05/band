@@ -6,9 +6,7 @@
 }
 
 @media(max-width: 1023px){
-    .s-col-full{
-        width: 100%;
-    }
+    
 
     .tour-section .places-buy-tickets{
         padding: 15px;
@@ -48,8 +46,8 @@
 
 @media(max-width: 739px){
   
-    .row{
-        
+    .s-col-full{
+        width: 100%;
     }
 
 
