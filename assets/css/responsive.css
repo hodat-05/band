@@ -12,13 +12,7 @@
         padding: 15px;
     }
 
-    .mt-8{
-        margin-top: 8px;
-    }
-
-    .mt-16{
-        margin-top: 16px;
-    }
+   
 
     .row .contact-info{
         line-height: 2;
@@ -50,6 +44,13 @@
         width: 100%;
     }
 
+     .mt-8{
+        margin-top: 8px;
+    }
+
+    .mt-16{
+        margin-top: 16px;
+    }
 
     
     #header{
